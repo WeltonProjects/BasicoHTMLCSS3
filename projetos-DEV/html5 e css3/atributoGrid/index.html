@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #f8f8f8;
+      padding: 10px;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Cabeçalho</div>
+    <div class="sidebar">Barra Lateral</div>
+    <div class="main">Conteúdo Principal</div>
+    <div class="footer">Rodapé</div>
+  </div>
+</body>
+</html>
+<p>
+    a classe .container representa um contêiner que usa o CSS Grid. As propriedades display: grid e grid-template-columns: 1fr 1fr 1fr definem a estrutura da grade, com três colunas de largura igual.
+
+    A propriedade grid-gap: 10px cria um espaçamento de 10 pixels entre as células da grade.
+    
+    A propriedade grid-template-rows: auto define que as linhas devem ter altura automática, se ajustando ao conteúdo.
+    
+    A propriedade grid-template-areas define o layout da grade usando uma sintaxe de grade de área. Neste exemplo, o cabeçalho ocupa as três colunas da primeira linha, a barra lateral ocupa a primeira coluna da segunda linha e o conteúdo principal ocupa as outras duas colunas da segunda linha. O rodapé ocupa as três colunas da terceira linha.
+    
+    Cada elemento dentro do contêiner possui uma classe correspondente (.header, .sidebar, .main, .footer) e usa a propriedade grid-area para especificar em qual área da grade ele deve ser colocado.
+    
+    
+</p>

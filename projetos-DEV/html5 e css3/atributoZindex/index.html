@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #f0f0f0;
+    }
+    
+    .box-1 {
+      z-index: 2;
+    }
+    
+    .box-2 {
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box-1">Caixa 1 (z-index: 2)</div>
+  <div class="box box-2">Caixa 2 (z-index: 1)</div>
+</body>
+</html>
+Neste exemplo, temos dois elementos <div> com a classe .box, cada um com uma classe adicional para identificação. A propriedade z-index é aplicada a esses elementos para definir a ordem de empilhamento.
+
+A propriedade z-index é usada para controlar a ordem de empilhamento de elementos posicionados na página. Ela define a "profundidade" dos elementos, determinando quais elementos aparecem na frente ou atrás de outros. Quanto maior o valor de z-index, mais alto o elemento será empilhado em relação aos outros.
+
+No exemplo acima, a .box-1 possui z-index: 2, enquanto a .box-2 possui z-index: 1. Isso significa que a .box-1 será empilhada em cima da .box-2, tornando-a visível na frente.
